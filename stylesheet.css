@@ -1,0 +1,42 @@
+.base {
+    background-image: url("icons/wom.0.png");
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.wom-0 {
+    background-image: url("icons/wom.0.png");
+}
+
+.wom-1 {
+    background-image: url("icons/wom.1.png");
+}
+
+.wom-2 {
+    background-image: url("icons/wom.2.png");
+}
+
+.wom-3 {
+    background-image: url("icons/wom.3.png");
+}
+
+.wom-4 {
+    background-image: url("icons/wom.4.png");
+}
+
+.wom-5 {
+    background-image: url("icons/wom.5.png");
+}
+
+.wom-6 {
+    background-image: url("icons/wom.6.png");
+}
+
+.wom-7 {
+    background-image: url("icons/wom.7.png");
+}
+
+.wom-8 {
+    background-image: url("icons/wom.8.png");
+}
