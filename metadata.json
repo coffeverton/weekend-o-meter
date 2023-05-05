@@ -5,6 +5,9 @@
   "version": 1,
   "url": "https://github.com/coffeverton/weekend-o-meter",
   "shell-version": [
-    "3.38"
+    "44",
+    "43",
+    "42",
+    "41"
   ]
 }
