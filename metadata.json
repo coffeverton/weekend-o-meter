@@ -2,9 +2,10 @@
   "name": "Weekend-O-Meter Revived",
   "description": "Beer timer until next week-end (based on https://extensions.gnome.org/extension/667/weekend-o-meter/)",
   "uuid": "weekend-o-meter@coffeverton.gmail.com",
-  "version": 1,
+  "version": 1.1,
   "url": "https://github.com/coffeverton/weekend-o-meter",
   "shell-version": [
+    "3.38",
     "44",
     "43",
     "42",
