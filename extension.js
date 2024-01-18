@@ -17,22 +17,15 @@
  */
 
 /* exported init */
-
-const GETTEXT_DOMAIN = 'weekendometer-extension';
-
-const { GObject, St } = imports.gi;
-
-const Gettext = imports.gettext.domain(GETTEXT_DOMAIN);
-const _ = Gettext.gettext;
-
-const ExtensionUtils = imports.misc.extensionUtils;
-const Main = imports.ui.main;
-const PanelMenu = imports.ui.panelMenu;
+import GObject from 'gi://GObject';
+import St from 'gi://St';
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+import * as PanelMenu from 'resource:///org/gnome/shell/ui/panelMenu.js';
 
 const Indicator = GObject.registerClass(
 class Indicator extends PanelMenu.Button {
     _init() {
-        super._init(0.0, _('Weekendometer'));
+        super._init(0.0, 'Weekendometer');
 
         let box = new St.BoxLayout({ style_class: 'panel-status-menu-box' });
         box.add_child(new St.Icon({style_class: this._getClassName()}));
@@ -108,8 +101,6 @@ class Indicator extends PanelMenu.Button {
 class Extension {
     constructor(uuid) {
         this._uuid = uuid;
-
-        ExtensionUtils.initTranslations(GETTEXT_DOMAIN);
     }
 
     enable() {
@@ -126,3 +117,5 @@ class Extension {
 function init(meta) {
     return new Extension(meta.uuid);
 }
+
+export default Extension;
