@@ -105,7 +105,7 @@ class Extension {
 
     enable() {
         this._indicator = new Indicator();
-        Main.panel.addToStatusArea(this._uuid, this._indicator);
+        Main.panel.addToStatusArea('weekend-o-meter@coffeverton.gmail.com', this._indicator);
     }
 
     disable() {
